@@ -17,6 +17,7 @@ function createWindow() {
     backgroundColor: '#212121',
     titleBarStyle: 'hiddenInset',
   });
+  mainWindow.setMenuBarVisibility(false);
   mainWindow.loadURL(
     isDev
       ? 'http://localhost:3000'
