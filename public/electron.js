@@ -15,6 +15,7 @@ function createWindow() {
     minHeight: 350,
     webPreferences: { nodeIntegration: true },
     backgroundColor: '#212121',
+    titleBarStyle: 'hiddenInset',
   });
   mainWindow.loadURL(
     isDev
