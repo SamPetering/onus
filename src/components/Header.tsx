@@ -68,7 +68,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
             variant="h3"
             align={'center'}
             color={'secondary'}
-            style={{ fontWeight: 'bold' }}
+            style={{ fontWeight: 'bold', userSelect: 'none' }}
             className={classes.menuTitle}
           >
             {title}
