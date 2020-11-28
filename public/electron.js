@@ -16,8 +16,6 @@ function createWindow() {
     webPreferences: { nodeIntegration: true },
     backgroundColor: '#212121',
     titleBarStyle: 'hiddenInset',
-    // transparent: true,
-    // frame: false,
   });
   mainWindow.loadURL(
     isDev
@@ -26,7 +24,7 @@ function createWindow() {
   );
   if (isDev) {
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
   }
   mainWindow.on('closed', () => (mainWindow = null));
 }
