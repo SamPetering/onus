@@ -9,9 +9,12 @@ let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 400,
+    height: 845,
+    minWidth: 375,
+    minHeight: 350,
     webPreferences: { nodeIntegration: true },
+    backgroundColor: '#212121',
   });
   mainWindow.loadURL(
     isDev
@@ -20,7 +23,6 @@ function createWindow() {
   );
   if (isDev) {
     // Open the DevTools.
-    //BrowserWindow.addDevToolsExtension('<location to your react chrome extension>');
     mainWindow.webContents.openDevTools();
   }
   mainWindow.on('closed', () => (mainWindow = null));
