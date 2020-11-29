@@ -20,7 +20,7 @@ const Clock: FC<Props> = ({ military }) => {
       <Typography
         variant="h3"
         color="textPrimary"
-        style={{ fontWeight: 'bold' }}
+        style={{ fontWeight: 'bold', userSelect: 'none' }}
       >
         {military ? militaryTime : time}
       </Typography>

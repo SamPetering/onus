@@ -24,7 +24,11 @@ const ToDoList: FC<Props> = ({ items = [], onItemClick }) => {
               const labelId = `checkbox-list-icon-label-${i}`;
               return (
                 <ListItem
-                  style={{ alignItems: 'center', alignContent: 'space-evenly' }}
+                  style={{
+                    alignItems: 'center',
+                    alignContent: 'space-evenly',
+                    userSelect: 'none',
+                  }}
                   key={i}
                   onClick={() => onItemClick(i)}
                   button
@@ -43,7 +47,7 @@ const ToDoList: FC<Props> = ({ items = [], onItemClick }) => {
         </>
       )}
       {!items?.length && (
-        <Box width={'100%'} style={{ textAlign: 'center' }}>
+        <Box width={'100%'} style={{ textAlign: 'center', userSelect: 'none' }}>
           no items bruh, add some shit and get to work
         </Box>
       )}
