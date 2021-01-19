@@ -53,7 +53,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
   return (
     <>
       <Box paddingTop={3} />
-      <AppBar position={'static'}>
+      <AppBar position={'static'} elevation={1}>
         <Toolbar variant="dense">
           <IconButton
             edge="start"

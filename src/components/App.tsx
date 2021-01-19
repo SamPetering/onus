@@ -27,8 +27,8 @@ const App: FC = () => {
     }
     return list;
   };
-  const [items, setToDoListItems] = useState<ToDoItem[]>(
-    fetchToDoListFromLocalStorage
+  const [items, setToDoListItems] = useState<ToDoItem[]>(() =>
+    fetchToDoListFromLocalStorage()
   );
   const [inputValue, setInputValue] = useState('');
   const [placeHolder, setPlaceHolder] = useState('add tasks');
