@@ -1,7 +1,7 @@
 # onus 
 ##### it's a to-do list
 
-[Download macOS](https://www.mediafire.com/file/h6u07svvhcyvlhf/onus-0.1.0.dmg/file)
+[Download macOS](https://download1583.mediafire.com/kw0oecx078yg/h6u07svvhcyvlhf/onus-0.1.0.dmg)
 
 ### Dev
 * ```yarn```
