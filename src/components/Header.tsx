@@ -55,7 +55,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
       <Box paddingTop={3} />
       <AppBar position={'static'} elevation={1}>
         <Toolbar variant="dense">
-          <IconButton
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
@@ -63,7 +63,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
             onClick={handleMenuClick}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h3"
             align={'center'}
@@ -73,7 +73,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
           >
             {title}
           </Typography>
-          <Menu
+          {/* <Menu
             id="menu-appbar"
             anchorEl={anchor}
             anchorOrigin={{
@@ -96,7 +96,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
                 }
               />
             </MenuItem>
-          </Menu>
+          </Menu> */}
         </Toolbar>
       </AppBar>
     </>
