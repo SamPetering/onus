@@ -12,7 +12,7 @@ import {
   Switch,
   FormControlLabel,
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import Box from '@material-ui/core/Box/Box';
 
 type Props = {
