@@ -89,11 +89,11 @@ const App: FC = () => {
           <Grid item container>
             <Grid item xs={false} sm={2} />
             <Grid item xs={12} sm={8}>
-              {/* <Paper variant={'outlined'} square>
+              <Paper variant={'outlined'} square>
                 <Box p={2}>
                   <Clock military={userConfig.militaryClock} />
                 </Box>
-              </Paper> */}
+              </Paper>
               <Box m={2} />
               <Paper variant={'outlined'} square>
                 <Box p={2}>

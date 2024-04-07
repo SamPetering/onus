@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { Typography, Box } from '@material-ui/core';
 
 type Props = {
@@ -6,15 +6,11 @@ type Props = {
 };
 
 const Clock: FC<Props> = ({ military }) => {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
-  const [militaryTime, setMilitaryTime] = useState(
-    new Date().toLocaleTimeString('en-GB')
-  );
-  setInterval(() => setTime(new Date().toLocaleTimeString()), 1000);
-  setInterval(
-    () => setMilitaryTime(new Date().toLocaleTimeString('en-GB')),
-    1000
-  );
+  const [t, setT] = useState(new Date());
+  useEffect(() => {
+      const i = setInterval(() => setT(new Date()), 1000);
+      return () => clearInterval(i);
+  }, []);
   return (
     <Box textAlign="center">
       <Typography
@@ -22,7 +18,7 @@ const Clock: FC<Props> = ({ military }) => {
         color="textPrimary"
         style={{ fontWeight: 'bold', userSelect: 'none' }}
       >
-        {military ? militaryTime : time}
+        {t.toLocaleTimeString(military ? 'en-GB' : 'en-US')}
       </Typography>
     </Box>
   );

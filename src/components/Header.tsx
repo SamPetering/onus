@@ -12,7 +12,6 @@ import {
   Switch,
   FormControlLabel,
 } from '@material-ui/core';
-// import MenuIcon from '@material-ui/icons/Menu';
 import Box from '@material-ui/core/Box/Box';
 
 type Props = {
@@ -55,15 +54,15 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
       <Box paddingTop={3} />
       <AppBar position={'static'} elevation={1}>
         <Toolbar variant="dense">
-          {/* <IconButton
+          <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
             onClick={handleMenuClick}
           >
-            <MenuIcon />
-          </IconButton> */}
+            ...
+          </IconButton>
           <Typography
             variant="h3"
             align={'center'}
@@ -73,7 +72,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
           >
             {title}
           </Typography>
-          {/* <Menu
+          <Menu
             id="menu-appbar"
             anchorEl={anchor}
             anchorOrigin={{
@@ -96,7 +95,7 @@ const Header: FC<Props> = ({ title, switchClock, militaryTime }) => {
                 }
               />
             </MenuItem>
-          </Menu> */}
+          </Menu>
         </Toolbar>
       </AppBar>
     </>
